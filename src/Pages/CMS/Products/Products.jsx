@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { CART, fetchProduct } from '../../../ReduxToolkit/ProductSlice'
-import {  Typography, Card, CardMedia, CardContent, CardActions, Button, CardActionArea, Grid, Box, Pagination } from '@mui/material'
+import {  Typography, Card, CardMedia, CardContent, CardActions, Button, CardActionArea, Grid, Box } from '@mui/material'
 import Loader from '../../../Components/Loader/Loader'
 
 

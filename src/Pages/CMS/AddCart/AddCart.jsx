@@ -1,5 +1,5 @@
 import React from 'react'
-import {Typography,TextField, Paper,Box,IconButton,Table,TableBody,TableCell,TableContainer,TableHead,TableRow,Divider,} from "@mui/material";
+import {Typography,TextField, Paper,Box,IconButton,Table,TableBody,TableCell,TableContainer,TableHead,TableRow} from "@mui/material";
 import { Delete as DeleteIcon } from "@mui/icons-material";
 import { useDispatch, useSelector } from 'react-redux';
 import { CART, clearBasket, removeItem } from '../../../ReduxToolkit/ProductSlice';
@@ -33,7 +33,7 @@ function AddCart() {
           Shopping Cart
         </Typography>
         <Paper elevation={3} sx={{ padding: 2, marginBottom: 3 }}>
-          {CARTS.length == 0 && <h3>No item in your cart</h3>}
+          {CARTS.length === 0 && <h3>No item in your cart</h3>}
           {CARTS?.length > 0 && (
             <TableContainer>
               <Table>
